@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://aka.ms/ai-foundry-vsc/agent/1.0.0
+version: 1.0.0
+name: ChatAgent
+description: Example agent for chat-based interactions
+model:
+  id: 'gpt-4o-2'
+instructions: |
+  You are a chat-based agent designed to assist users in various tasks.
+tools: []
