@@ -1,0 +1,35 @@
+### Get API Info
+GET http://localhost:55041/
+Accept: application/json
+
+### Health Check
+GET http://localhost:55041/health
+Accept: application/json
+
+### Start Workflow (No Inputs)
+POST http://localhost:55041/start
+Content-Type: application/json
+
+{}
+
+### Start Workflow (With User Inputs)
+POST http://localhost:55041/start
+Content-Type: application/json
+
+{
+  "inputs": [
+    "Hello there"
+  ]
+}
+
+### Check Run Status
+// Replace RUN_ID with an actual run ID from a start response
+GET http://localhost:55041/runs/run-1746713831-8d3f980d
+Accept: application/json
+
+### Specific Run (modify with your actual run ID)
+@runId = run-1746713831-8d3f980d
+
+### Get Status of Specific Run
+GET http://localhost:550418000/runs/{{runId}}
+Accept: application/json
